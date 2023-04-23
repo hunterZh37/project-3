@@ -1,0 +1,50 @@
+Start testing: Apr 23 16:31 CDT
+----------------------------------------------------------
+1/2 Testing: test_file
+1/2 Test: test_file
+Command: "/Users/hunterzhang/Desktop/CS564/project-3/build/test_file"
+Directory: /Users/hunterzhang/Desktop/CS564/project-3/build
+"test_file" start time: Apr 23 16:31 CDT
+Output:
+----------------------------------------------------------
+fileWriteRead passed.
+fileWriteReadOffset passed.
+fileWriteReadMultiple passed.
+fileNumReadsWrites passed.
+<end of output>
+Test time =   0.25 sec
+----------------------------------------------------------
+Test Passed.
+"test_file" end time: Apr 23 16:31 CDT
+"test_file" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/2 Testing: test_join
+2/2 Test: test_join
+Command: "/Users/hunterzhang/Desktop/CS564/project-3/build/test_join"
+Directory: /Users/hunterzhang/Desktop/CS564/project-3/build
+"test_join" start time: Apr 23 16:31 CDT
+Output:
+----------------------------------------------------------
+testJoinGetAlgorithm passed.
+testCorrectness1 passed.
+testCorrectness2 passed.
+testCorrectness3 passed.
+testCorrectness4 passed.
+testCorrectness5 passed.
+testCorrectness6 passed.
+testIO1 passed.
+testIO2 passed.
+testIO3 passed.
+testIO4 passed.
+testIO5 passed.
+testIO6 passed.
+<end of output>
+Test time =   2.55 sec
+----------------------------------------------------------
+Test Passed.
+"test_join" end time: Apr 23 16:31 CDT
+"test_join" time elapsed: 00:00:02
+----------------------------------------------------------
+
+End testing: Apr 23 16:31 CDT
