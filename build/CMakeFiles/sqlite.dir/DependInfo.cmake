@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/hunterzhang/Desktop/CS564/project-3/src/extern/sqlite3.c" "CMakeFiles/sqlite.dir/src/extern/sqlite3.c.o" "gcc" "CMakeFiles/sqlite.dir/src/extern/sqlite3.c.o.d"
+  "/home/ono/cs564/projects/p3/project-3/src/extern/sqlite3.c" "CMakeFiles/sqlite.dir/src/extern/sqlite3.c.o" "gcc" "CMakeFiles/sqlite.dir/src/extern/sqlite3.c.o.d"
   )
 
 # Targets to which this target links.

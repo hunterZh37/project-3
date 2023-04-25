@@ -8,13 +8,13 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/hunterzhang/Desktop/CS564/project-3/src/test/memory/test_memory.cpp" "CMakeFiles/test_memory.dir/src/test/memory/test_memory.cpp.o" "gcc" "CMakeFiles/test_memory.dir/src/test/memory/test_memory.cpp.o.d"
+  "/home/ono/cs564/projects/p3/project-3/src/test/memory/test_memory.cpp" "CMakeFiles/test_memory.dir/src/test/memory/test_memory.cpp.o" "gcc" "CMakeFiles/test_memory.dir/src/test/memory/test_memory.cpp.o.d"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/Users/hunterzhang/Desktop/CS564/project-3/build/CMakeFiles/join.dir/DependInfo.cmake"
-  "/Users/hunterzhang/Desktop/CS564/project-3/build/CMakeFiles/sqlite.dir/DependInfo.cmake"
+  "/home/ono/cs564/projects/p3/project-3/build/CMakeFiles/join.dir/DependInfo.cmake"
+  "/home/ono/cs564/projects/p3/project-3/build/CMakeFiles/sqlite.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

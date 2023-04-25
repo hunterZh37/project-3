@@ -44,19 +44,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /opt/homebrew/Cellar/cmake/3.22.1/bin/cmake
+CMAKE_COMMAND = /usr/bin/cmake
 
 # The command to remove a file.
-RM = /opt/homebrew/Cellar/cmake/3.22.1/bin/cmake -E rm -f
+RM = /usr/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/hunterzhang/Desktop/CS564/project-3
+CMAKE_SOURCE_DIR = /home/ono/cs564/projects/p3/project-3
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/hunterzhang/Desktop/CS564/project-3/build
+CMAKE_BINARY_DIR = /home/ono/cs564/projects/p3/project-3/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/sqlite.dir/depend.make
@@ -72,16 +72,16 @@ include CMakeFiles/sqlite.dir/flags.make
 CMakeFiles/sqlite.dir/src/extern/sqlite3.c.o: CMakeFiles/sqlite.dir/flags.make
 CMakeFiles/sqlite.dir/src/extern/sqlite3.c.o: ../src/extern/sqlite3.c
 CMakeFiles/sqlite.dir/src/extern/sqlite3.c.o: CMakeFiles/sqlite.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hunterzhang/Desktop/CS564/project-3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/sqlite.dir/src/extern/sqlite3.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sqlite.dir/src/extern/sqlite3.c.o -MF CMakeFiles/sqlite.dir/src/extern/sqlite3.c.o.d -o CMakeFiles/sqlite.dir/src/extern/sqlite3.c.o -c /Users/hunterzhang/Desktop/CS564/project-3/src/extern/sqlite3.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ono/cs564/projects/p3/project-3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/sqlite.dir/src/extern/sqlite3.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sqlite.dir/src/extern/sqlite3.c.o -MF CMakeFiles/sqlite.dir/src/extern/sqlite3.c.o.d -o CMakeFiles/sqlite.dir/src/extern/sqlite3.c.o -c /home/ono/cs564/projects/p3/project-3/src/extern/sqlite3.c
 
 CMakeFiles/sqlite.dir/src/extern/sqlite3.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/sqlite.dir/src/extern/sqlite3.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/hunterzhang/Desktop/CS564/project-3/src/extern/sqlite3.c > CMakeFiles/sqlite.dir/src/extern/sqlite3.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ono/cs564/projects/p3/project-3/src/extern/sqlite3.c > CMakeFiles/sqlite.dir/src/extern/sqlite3.c.i
 
 CMakeFiles/sqlite.dir/src/extern/sqlite3.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/sqlite.dir/src/extern/sqlite3.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/hunterzhang/Desktop/CS564/project-3/src/extern/sqlite3.c -o CMakeFiles/sqlite.dir/src/extern/sqlite3.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ono/cs564/projects/p3/project-3/src/extern/sqlite3.c -o CMakeFiles/sqlite.dir/src/extern/sqlite3.c.s
 
 # Object files for target sqlite
 sqlite_OBJECTS = \
@@ -93,7 +93,7 @@ sqlite_EXTERNAL_OBJECTS =
 libsqlite.a: CMakeFiles/sqlite.dir/src/extern/sqlite3.c.o
 libsqlite.a: CMakeFiles/sqlite.dir/build.make
 libsqlite.a: CMakeFiles/sqlite.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/hunterzhang/Desktop/CS564/project-3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library libsqlite.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ono/cs564/projects/p3/project-3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library libsqlite.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/sqlite.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/sqlite.dir/link.txt --verbose=$(VERBOSE)
 
@@ -106,6 +106,6 @@ CMakeFiles/sqlite.dir/clean:
 .PHONY : CMakeFiles/sqlite.dir/clean
 
 CMakeFiles/sqlite.dir/depend:
-	cd /Users/hunterzhang/Desktop/CS564/project-3/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/hunterzhang/Desktop/CS564/project-3 /Users/hunterzhang/Desktop/CS564/project-3 /Users/hunterzhang/Desktop/CS564/project-3/build /Users/hunterzhang/Desktop/CS564/project-3/build /Users/hunterzhang/Desktop/CS564/project-3/build/CMakeFiles/sqlite.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ono/cs564/projects/p3/project-3/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ono/cs564/projects/p3/project-3 /home/ono/cs564/projects/p3/project-3 /home/ono/cs564/projects/p3/project-3/build /home/ono/cs564/projects/p3/project-3/build /home/ono/cs564/projects/p3/project-3/build/CMakeFiles/sqlite.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/sqlite.dir/depend
 

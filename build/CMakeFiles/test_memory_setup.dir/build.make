@@ -44,19 +44,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /opt/homebrew/Cellar/cmake/3.22.1/bin/cmake
+CMAKE_COMMAND = /usr/bin/cmake
 
 # The command to remove a file.
-RM = /opt/homebrew/Cellar/cmake/3.22.1/bin/cmake -E rm -f
+RM = /usr/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/hunterzhang/Desktop/CS564/project-3
+CMAKE_SOURCE_DIR = /home/ono/cs564/projects/p3/project-3
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/hunterzhang/Desktop/CS564/project-3/build
+CMAKE_BINARY_DIR = /home/ono/cs564/projects/p3/project-3/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/test_memory_setup.dir/depend.make
@@ -72,16 +72,16 @@ include CMakeFiles/test_memory_setup.dir/flags.make
 CMakeFiles/test_memory_setup.dir/src/test/memory/test_memory_setup.cpp.o: CMakeFiles/test_memory_setup.dir/flags.make
 CMakeFiles/test_memory_setup.dir/src/test/memory/test_memory_setup.cpp.o: ../src/test/memory/test_memory_setup.cpp
 CMakeFiles/test_memory_setup.dir/src/test/memory/test_memory_setup.cpp.o: CMakeFiles/test_memory_setup.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hunterzhang/Desktop/CS564/project-3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/test_memory_setup.dir/src/test/memory/test_memory_setup.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test_memory_setup.dir/src/test/memory/test_memory_setup.cpp.o -MF CMakeFiles/test_memory_setup.dir/src/test/memory/test_memory_setup.cpp.o.d -o CMakeFiles/test_memory_setup.dir/src/test/memory/test_memory_setup.cpp.o -c /Users/hunterzhang/Desktop/CS564/project-3/src/test/memory/test_memory_setup.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ono/cs564/projects/p3/project-3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/test_memory_setup.dir/src/test/memory/test_memory_setup.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test_memory_setup.dir/src/test/memory/test_memory_setup.cpp.o -MF CMakeFiles/test_memory_setup.dir/src/test/memory/test_memory_setup.cpp.o.d -o CMakeFiles/test_memory_setup.dir/src/test/memory/test_memory_setup.cpp.o -c /home/ono/cs564/projects/p3/project-3/src/test/memory/test_memory_setup.cpp
 
 CMakeFiles/test_memory_setup.dir/src/test/memory/test_memory_setup.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test_memory_setup.dir/src/test/memory/test_memory_setup.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/hunterzhang/Desktop/CS564/project-3/src/test/memory/test_memory_setup.cpp > CMakeFiles/test_memory_setup.dir/src/test/memory/test_memory_setup.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ono/cs564/projects/p3/project-3/src/test/memory/test_memory_setup.cpp > CMakeFiles/test_memory_setup.dir/src/test/memory/test_memory_setup.cpp.i
 
 CMakeFiles/test_memory_setup.dir/src/test/memory/test_memory_setup.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_memory_setup.dir/src/test/memory/test_memory_setup.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/hunterzhang/Desktop/CS564/project-3/src/test/memory/test_memory_setup.cpp -o CMakeFiles/test_memory_setup.dir/src/test/memory/test_memory_setup.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ono/cs564/projects/p3/project-3/src/test/memory/test_memory_setup.cpp -o CMakeFiles/test_memory_setup.dir/src/test/memory/test_memory_setup.cpp.s
 
 # Object files for target test_memory_setup
 test_memory_setup_OBJECTS = \
@@ -95,7 +95,7 @@ test_memory_setup: CMakeFiles/test_memory_setup.dir/build.make
 test_memory_setup: libjoin.a
 test_memory_setup: libsqlite.a
 test_memory_setup: CMakeFiles/test_memory_setup.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/hunterzhang/Desktop/CS564/project-3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable test_memory_setup"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ono/cs564/projects/p3/project-3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable test_memory_setup"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_memory_setup.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -107,6 +107,6 @@ CMakeFiles/test_memory_setup.dir/clean:
 .PHONY : CMakeFiles/test_memory_setup.dir/clean
 
 CMakeFiles/test_memory_setup.dir/depend:
-	cd /Users/hunterzhang/Desktop/CS564/project-3/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/hunterzhang/Desktop/CS564/project-3 /Users/hunterzhang/Desktop/CS564/project-3 /Users/hunterzhang/Desktop/CS564/project-3/build /Users/hunterzhang/Desktop/CS564/project-3/build /Users/hunterzhang/Desktop/CS564/project-3/build/CMakeFiles/test_memory_setup.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ono/cs564/projects/p3/project-3/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ono/cs564/projects/p3/project-3 /home/ono/cs564/projects/p3/project-3 /home/ono/cs564/projects/p3/project-3/build /home/ono/cs564/projects/p3/project-3/build /home/ono/cs564/projects/p3/project-3/build/CMakeFiles/test_memory_setup.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/test_memory_setup.dir/depend
 

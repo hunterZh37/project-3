@@ -44,19 +44,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /opt/homebrew/Cellar/cmake/3.22.1/bin/cmake
+CMAKE_COMMAND = /usr/bin/cmake
 
 # The command to remove a file.
-RM = /opt/homebrew/Cellar/cmake/3.22.1/bin/cmake -E rm -f
+RM = /usr/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/hunterzhang/Desktop/CS564/project-3
+CMAKE_SOURCE_DIR = /home/ono/cs564/projects/p3/project-3
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/hunterzhang/Desktop/CS564/project-3/build
+CMAKE_BINARY_DIR = /home/ono/cs564/projects/p3/project-3/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/join.dir/depend.make
@@ -72,30 +72,30 @@ include CMakeFiles/join.dir/flags.make
 CMakeFiles/join.dir/src/join.cpp.o: CMakeFiles/join.dir/flags.make
 CMakeFiles/join.dir/src/join.cpp.o: ../src/join.cpp
 CMakeFiles/join.dir/src/join.cpp.o: CMakeFiles/join.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hunterzhang/Desktop/CS564/project-3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/join.dir/src/join.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/join.dir/src/join.cpp.o -MF CMakeFiles/join.dir/src/join.cpp.o.d -o CMakeFiles/join.dir/src/join.cpp.o -c /Users/hunterzhang/Desktop/CS564/project-3/src/join.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ono/cs564/projects/p3/project-3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/join.dir/src/join.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/join.dir/src/join.cpp.o -MF CMakeFiles/join.dir/src/join.cpp.o.d -o CMakeFiles/join.dir/src/join.cpp.o -c /home/ono/cs564/projects/p3/project-3/src/join.cpp
 
 CMakeFiles/join.dir/src/join.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/join.dir/src/join.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/hunterzhang/Desktop/CS564/project-3/src/join.cpp > CMakeFiles/join.dir/src/join.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ono/cs564/projects/p3/project-3/src/join.cpp > CMakeFiles/join.dir/src/join.cpp.i
 
 CMakeFiles/join.dir/src/join.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/join.dir/src/join.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/hunterzhang/Desktop/CS564/project-3/src/join.cpp -o CMakeFiles/join.dir/src/join.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ono/cs564/projects/p3/project-3/src/join.cpp -o CMakeFiles/join.dir/src/join.cpp.s
 
 CMakeFiles/join.dir/src/file.cpp.o: CMakeFiles/join.dir/flags.make
 CMakeFiles/join.dir/src/file.cpp.o: ../src/file.cpp
 CMakeFiles/join.dir/src/file.cpp.o: CMakeFiles/join.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hunterzhang/Desktop/CS564/project-3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/join.dir/src/file.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/join.dir/src/file.cpp.o -MF CMakeFiles/join.dir/src/file.cpp.o.d -o CMakeFiles/join.dir/src/file.cpp.o -c /Users/hunterzhang/Desktop/CS564/project-3/src/file.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ono/cs564/projects/p3/project-3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/join.dir/src/file.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/join.dir/src/file.cpp.o -MF CMakeFiles/join.dir/src/file.cpp.o.d -o CMakeFiles/join.dir/src/file.cpp.o -c /home/ono/cs564/projects/p3/project-3/src/file.cpp
 
 CMakeFiles/join.dir/src/file.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/join.dir/src/file.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/hunterzhang/Desktop/CS564/project-3/src/file.cpp > CMakeFiles/join.dir/src/file.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ono/cs564/projects/p3/project-3/src/file.cpp > CMakeFiles/join.dir/src/file.cpp.i
 
 CMakeFiles/join.dir/src/file.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/join.dir/src/file.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/hunterzhang/Desktop/CS564/project-3/src/file.cpp -o CMakeFiles/join.dir/src/file.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ono/cs564/projects/p3/project-3/src/file.cpp -o CMakeFiles/join.dir/src/file.cpp.s
 
 # Object files for target join
 join_OBJECTS = \
@@ -109,7 +109,7 @@ libjoin.a: CMakeFiles/join.dir/src/join.cpp.o
 libjoin.a: CMakeFiles/join.dir/src/file.cpp.o
 libjoin.a: CMakeFiles/join.dir/build.make
 libjoin.a: CMakeFiles/join.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/hunterzhang/Desktop/CS564/project-3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libjoin.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ono/cs564/projects/p3/project-3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libjoin.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/join.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/join.dir/link.txt --verbose=$(VERBOSE)
 
@@ -122,6 +122,6 @@ CMakeFiles/join.dir/clean:
 .PHONY : CMakeFiles/join.dir/clean
 
 CMakeFiles/join.dir/depend:
-	cd /Users/hunterzhang/Desktop/CS564/project-3/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/hunterzhang/Desktop/CS564/project-3 /Users/hunterzhang/Desktop/CS564/project-3 /Users/hunterzhang/Desktop/CS564/project-3/build /Users/hunterzhang/Desktop/CS564/project-3/build /Users/hunterzhang/Desktop/CS564/project-3/build/CMakeFiles/join.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ono/cs564/projects/p3/project-3/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ono/cs564/projects/p3/project-3 /home/ono/cs564/projects/p3/project-3 /home/ono/cs564/projects/p3/project-3/build /home/ono/cs564/projects/p3/project-3/build /home/ono/cs564/projects/p3/project-3/build/CMakeFiles/join.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/join.dir/depend
 
