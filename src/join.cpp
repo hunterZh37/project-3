@@ -38,17 +38,26 @@ int join(File &file, int numPagesR, int numPagesS, char *buffer,
   int pageIndexOut = pageIndexS + numPagesS;  //initial page index for tuplesOut
   int numPagesRUnChecked = numPagesR;
   int internalPageIndexS = pageIndexS;        //internal page index for S to iterate through R pages
-  int internalPageIndexR = pageIndexR;         //internal page index for R to iterate through S pages
+  int internalPageIndexR = pageIndexR;        //internal page index for R to iterate through S pages
+  int numCurrentPagesLeft = 0;
 
 
   std::vector<Tuple> tuplesOut;
   Tuple *tuplesR;
   Tuple *tuplesS;
 
+  void *ptr_at_S;
+
+  u_int32_t sFirst;
+  u_int32_t sSecond;
+  u_int32_t rFirst;
+  u_int32_t rSecond;
+
   while (numPagesRUnChecked != 0)
   {
     if (numPagesRUnChecked < numFrames - 2)
     { // only one page left to check
+      numCurrentPagesLeft = numPagesRUnChecked;
       file.read(buffer, internalPageIndexR, numPagesRUnChecked);
       tuplesR = (Tuple *)buffer;
 
@@ -59,7 +68,7 @@ int join(File &file, int numPagesR, int numPagesS, char *buffer,
       // std::cout << "R(" << firstInt << ", " << secondInt << ")" << std::endl;
       // }
       
-      void *ptr_at_S = (void *)(buffer + (numPagesRUnChecked) * 512 * 8);
+      ptr_at_S = (void *)(buffer + (numPagesRUnChecked) * 512 * 8);
       internalPageIndexS = pageIndexS;
       for (int i = 0; i < numPagesS; i++)
       {
@@ -75,15 +84,13 @@ int join(File &file, int numPagesR, int numPagesS, char *buffer,
 
         for (int s = 0; s < 512; s++)
         {
-          Tuple *tupleS = &tuplesS[s];
-          u_int32_t sFirst = std::get<0>(*tupleS);
-          u_int32_t sSecond = std::get<1>(*tupleS);
+          sFirst = std::get<0>(tuplesS[s]);
+          sSecond = std::get<1>(tuplesS[s]);
 
           for (int r = 0; r < 512 * numPagesRUnChecked; r++)
           {
-            Tuple *tupleR = &tuplesR[r];
-            u_int32_t rFirst = std::get<0>(*tupleR);
-            u_int32_t rSecond = std::get<1>(*tupleR);
+            rFirst = std::get<0>(tuplesR[r]);
+            rSecond = std::get<1>(tuplesR[r]);
             if (rFirst == sFirst)
             {
               tuplesOut.emplace_back(rSecond, sSecond);
@@ -106,7 +113,8 @@ int join(File &file, int numPagesR, int numPagesS, char *buffer,
       numPagesRUnChecked -= numPagesRUnChecked;
     }
     else // more than one pages left to check
-    {    
+    {
+      numCurrentPagesLeft = numFrames - 2;
       file.read(buffer, internalPageIndexR, numFrames - 2);
       tuplesR = (Tuple *)buffer;
       
@@ -120,8 +128,7 @@ int join(File &file, int numPagesR, int numPagesS, char *buffer,
 
 
 
-
-      void *ptr_at_S = (void *)(buffer + (numFrames-2) * 512 * 8);
+      ptr_at_S = (void *)(buffer + (numFrames-2) * 512 * 8);
       internalPageIndexS = pageIndexS;
 
       for (int i = 0; i < numPagesS; i++)
@@ -138,16 +145,14 @@ int join(File &file, int numPagesR, int numPagesS, char *buffer,
 
         for (int s = 0; s < 512 ; s++)
         {
-          Tuple *tupleS = &tuplesS[s];
-          u_int32_t sFirst = std::get<0>(*tupleS);
-          u_int32_t sSecond = std::get<1>(*tupleS);
+          sFirst = std::get<0>(tuplesS[s]);
+          sSecond = std::get<1>(tuplesS[s]);
          // std::cout << "S(" << sFirst << ", " << sSecond << ")" << std::endl;
 
           for (int r = 0; r < 512 * (numFrames-2); r++)
           {
-            Tuple *tupleR = &tuplesR[r];
-            u_int32_t rFirst = std::get<0>(*tupleR);
-            u_int32_t rSecond = std::get<1>(*tupleR);
+            rFirst = std::get<0>(tuplesR[r]);
+            rSecond = std::get<1>(tuplesR[r]);
             // std::cout << "R(" << rFirst << ", " << rSecond << ")" << std::endl;
             if (rFirst == sFirst && rFirst != 0)
             {    
