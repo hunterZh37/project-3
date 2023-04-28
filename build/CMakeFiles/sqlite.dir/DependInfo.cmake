@@ -11,8 +11,8 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/ono/cs564/projects/p3/project-3/src/extern/sqlite3.c" "CMakeFiles/sqlite.dir/src/extern/sqlite3.c.o" "gcc" "CMakeFiles/sqlite.dir/src/extern/sqlite3.c.o.d"
   )
 
-# Targets to which this target links.
-set(CMAKE_TARGET_LINKED_INFO_FILES
+# Targets to which this target links which contain Fortran sources.
+set(CMAKE_Fortran_TARGET_LINKED_INFO_FILES
   )
 
 # Fortran module output directory.

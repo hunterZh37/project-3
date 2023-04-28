@@ -11,10 +11,8 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/ono/cs564/projects/p3/project-3/src/test/test_file.cpp" "CMakeFiles/test_file.dir/src/test/test_file.cpp.o" "gcc" "CMakeFiles/test_file.dir/src/test/test_file.cpp.o.d"
   )
 
-# Targets to which this target links.
-set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/ono/cs564/projects/p3/project-3/build/CMakeFiles/join.dir/DependInfo.cmake"
-  "/home/ono/cs564/projects/p3/project-3/build/CMakeFiles/sqlite.dir/DependInfo.cmake"
+# Targets to which this target links which contain Fortran sources.
+set(CMAKE_Fortran_TARGET_LINKED_INFO_FILES
   )
 
 # Fortran module output directory.
